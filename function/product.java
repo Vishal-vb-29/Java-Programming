@@ -1,11 +1,11 @@
 package function;
 import java.util.Scanner;
 
-public class product {
-    public static int multiply(int a,int b){
-        int prod=a*b;
-        return prod;
-    }
+public class Product {
+    public static int multiply(int a , int b){
+    return a*b;
+}
+    
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a no : ");
@@ -17,3 +17,4 @@ public class product {
     }
     
 }
+
