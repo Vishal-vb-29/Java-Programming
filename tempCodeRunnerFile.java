@@ -1,2 +1,1 @@
-import java.math.*;
-public class optiprime {
+eIthBit
