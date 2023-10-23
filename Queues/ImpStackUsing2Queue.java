@@ -7,11 +7,15 @@ public class ImpStackUsing2Queue {
         public static boolean isEmpty(){
             return q1.isEmpty() && q2.isEmpty();
         }
+
+        //Push O(1)
         
         public static void push(int data){
             if(!q1.isEmpty()) q1.add(data);
             else q2.add(data);
         }
+
+        //Pop O(n)
         public static int pop(){
             if(isEmpty()){
                 System.out.println("Empty Stack");
@@ -33,6 +37,8 @@ public class ImpStackUsing2Queue {
             }
             return top;
         }
+
+        //Peek O(n)
         public static int peek(){
             if(isEmpty()){
                 System.out.println("Empty Stack");
@@ -55,7 +61,7 @@ public class ImpStackUsing2Queue {
     }
 
     public static void main(String [] args){
-        Stack s= new Stack();
+        Stack<Integer> s= new Stack<>();
         s.push(1);
         s.push(2);
         s.push(3);

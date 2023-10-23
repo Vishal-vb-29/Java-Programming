@@ -14,11 +14,11 @@ public class ImpQueUsngLL{
             static Node head=null;
             static Node tail=null;
 
-        public static boolean isEmpty(){
+        public boolean isEmpty(){
             return head==null && tail==null;
         }
 
-        public static void add(int data){
+        public void add(int data){
             Node newNode=new Node(data);
             if(head==null){
                 head=tail=newNode;
@@ -27,7 +27,7 @@ public class ImpQueUsngLL{
             tail.next=newNode;
             tail=newNode;
         }
-        public static int remove(){
+        public int remove(){
             if(isEmpty()){
                 System.out.println("Empty Queue");
                 return -1;
@@ -39,7 +39,7 @@ public class ImpQueUsngLL{
 
             return front;
         }
-        public static int peek(){
+        public int peek(){
             if(isEmpty()){
                 System.out.println("Queue Empty");
                 return -1;

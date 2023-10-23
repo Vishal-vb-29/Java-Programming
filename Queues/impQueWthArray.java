@@ -17,7 +17,7 @@ public class impQueWthArray{
         public static boolean isFull(){
             return rear==size-1;
         }
-        public static void add(int data){
+        public void add(int data){
             if(isFull()){
                 System.out.println("Queue is full");
                 return;
@@ -25,7 +25,7 @@ public class impQueWthArray{
             rear=rear+1;
             arr[rear]=data;      
         }
-        public static int remove(){
+        public int remove(){
             if(isEmpty()) {
                 System.out.println("Empty Queue");
                 return -1;
@@ -47,7 +47,7 @@ public class impQueWthArray{
     }
 
     public static void main(String []args){
-        Queue q=new Queue(5);
+    Queue q=new Queue(5);
         q.add(1);
         q.add(2);
         q.add(3);
