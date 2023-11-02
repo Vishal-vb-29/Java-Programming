@@ -9,7 +9,7 @@ public class firstNonRepitingElement {
             q.add(ch);
             freq[ch-'a']++;
             while(!q.isEmpty() && freq[q.peek()-'a']>1){
-                q.remove();
+                 q.remove();
             }
             if(q.isEmpty()){
                 System.out.print(-1+" ");
